@@ -42,7 +42,7 @@ const SignupScreen = ({ navigation }) => {
 
       <FormInput
         labelValue={confirmPassword}
-        onChangeText={(userPassword) => setPassword(userPassword)}
+        onChangeText={(userPassword) => setConfirmPassword(userPassword)}
         placeholderText="Confirm Password"
         iconType="lock"
         secureTextEntry={true}
@@ -71,13 +71,7 @@ const SignupScreen = ({ navigation }) => {
 
       {Platform.OS === "android" ? (
         <View>
-          <SocialButton
-            buttonTitle="Sign Up with Facebook"
-            btnType="facebook"
-            color="#4867aa"
-            backgroundColor="#e6eaf4"
-            onPress={() => {}}
-          />
+        
 
           <SocialButton
             buttonTitle="Sign Up with Google"

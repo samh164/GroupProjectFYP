@@ -65,21 +65,21 @@ const OnBoardingScreen = ({navigation}) => {
             pages={[
              {
                 backgroundColor: '#fff',
-                image: <Image source={require('../assets/logo.png')} />,
-                title: 'SafetyHub',
-                subtitle: 'Everything you need in one place',
+                image: <Image source={require('../assets/1.png')} resizeMode="contain" style={{ width: 700, height: 800 }} />,
+                // title: 'SafetyHub',
+                // subtitle: 'Everything you need in one place',
              },
              {
                 backgroundColor: '#fff',
-                image: <Image source={require('../assets/onboarding1.png')} />,
-                title: 'Onboarding',
-                subtitle: 'Done with React Native Onboarding Swiper',
+                image: <Image source={require('../assets/2.png')} resizeMode="contain" style={{ width: 700, height: 800 }} />,
+                // title: 'Onboarding',
+                // subtitle: 'Done with React Native Onboarding Swiper',
              },
              {
                 backgroundColor: '#fff',
-                image: <Image source={require('../assets/onboarding2.png')} />,
-                title: 'Onboarding',
-                subtitle: 'Done with React Native Onboarding Swiper',
+                image: <Image source={require('../assets/3.png')} resizeMode="contain" style={{ width: 700, height: 800 }} />,
+                // title: 'Onboarding',
+                // subtitle: 'Done with React Native Onboarding Swiper',
              },
             ]}
             />
@@ -92,7 +92,8 @@ export default OnBoardingScreen;
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        alignItems: 'center',
-        justifyContent: 'center',
+        width: "100%",
+       
       },
     });
+

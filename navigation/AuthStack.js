@@ -6,6 +6,7 @@ import { AntDesign } from "@expo/vector-icons";
 import OnboardingScreen from "../screens/OnboardingScreen";
 import LoginScreen from "../screens/LoginScreen";
 import SignupScreen from "../screens/SignupScreen";
+import MainTabsScreen from '../screens/MainTabsScreen';
 import { GoogleSignin } from "@react-native-community/google-signin";
 
 const Stack = createStackNavigator();
@@ -73,6 +74,11 @@ const AuthStack = () => {
             </View>
           ),
         })}
+      />
+       <Stack.Screen
+        name="MainTabsScreen"
+        component={MainTabsScreen}
+        options={{header: () => null}}
       />
     </Stack.Navigator>
   );

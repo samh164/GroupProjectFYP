@@ -1,13 +1,13 @@
 import { createStackNavigator } from '@react-navigation/stack';
 import React from 'react';
-import HomeScreen from '../screens/HomeScreen';
+import MainTabsScreen from '../screens/MainTabsScreen';
 
 const Stack = createStackNavigator();
 
 const AppStack = ()=>{
     return(
         <Stack.Navigator>
-            <Stack.Screen name='Home' component={HomeScreen} />
+            <Stack.Screen name='SafetyHub' component={MainTabsScreen} />
         </Stack.Navigator>
     );
 }
