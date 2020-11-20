@@ -14,7 +14,7 @@ export default FilesScreen;
 
 const styles = StyleSheet.create({
   container:{
-      backgroundColor: '#f9fafd',
+      backgroundColor: '#FDF5F4',
       flex: 1,
       justifyContent: 'center',
       alignItems: 'center',

@@ -1,30 +1,33 @@
 import { NavigationContainer } from '@react-navigation/native';
 import  React from 'react';
  import { createStackNavigator } from '@react-navigation/stack';
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+ import { createMaterialBottomTabNavigator } from '@react-navigation/material-bottom-tabs';
 
 //icon fonts
 
 import { SimpleLineIcons } from '@expo/vector-icons';
 import { FontAwesome5 } from '@expo/vector-icons';
 import { AntDesign } from '@expo/vector-icons';
+import { FontAwesome } from '@expo/vector-icons'; 
 
 import ProfileScreen from './ProfileScreen';
 import TasksScreen from './TasksScreen';
 import FilesScreen from './FilesScreen';
 import FormsScreen from './FormsScreen';
+import LearnScreen from './LearnScreen';
 
 
 // const TasksStack = createStackNavigator();
 // const ProfileStack = createStackNavigator();
 
-const Tab = createBottomTabNavigator();
+const Tab = createMaterialBottomTabNavigator();
 
 const MainTabsScreen = () => (
 <Tab.Navigator
       initialRouteName="Tasks"
-      activeColor="#EE6457"
-      barStyle={{ backgroundColor: '#EEEEEE' }}
+      activeColor="#034C5F"
+      inactiveColor="#034C5F"
+      barStyle={{ backgroundColor: '#F9C4BA' }}
     >
       <Tab.Screen
         name="Tasks"
@@ -32,7 +35,7 @@ const MainTabsScreen = () => (
         options={{
           tabBarLabel: 'Tasks',
           tabBarIcon: ({ color }) => (
-            <FontAwesome5 name="tasks" color={color} size={26} />
+            <FontAwesome5 name="tasks" color={color} size={24} />
           ),
         }}
       />
@@ -42,7 +45,17 @@ const MainTabsScreen = () => (
         options={{
           tabBarLabel: 'Forms',
           tabBarIcon: ({ color }) => (
-            <AntDesign name="form" color={color} size={26} />
+            <AntDesign name="form" color={color} size={24} />
+          ),
+        }}
+      />
+      <Tab.Screen
+        name="Learn"
+        component={LearnScreen}
+        options={{
+           tabBarLabel: 'Learn',
+          tabBarIcon: ({ color }) => (
+            <FontAwesome name="book" color={color} size={29}  />
           ),
         }}
       />
@@ -52,7 +65,7 @@ const MainTabsScreen = () => (
         options={{
           tabBarLabel: 'Files',
           tabBarIcon: ({ color }) => (
-            <SimpleLineIcons name="folder-alt" color={color} size={25} />
+            <SimpleLineIcons name="folder-alt" color={color} size={24} />
           ),
         }}
       />
@@ -63,7 +76,7 @@ const MainTabsScreen = () => (
         options={{
           tabBarLabel: 'Profile',
           tabBarIcon: ({ color }) => (
-            <SimpleLineIcons name="user" color={color} size={26} />
+            <SimpleLineIcons name="user" color={color} size={24} />
           ),
         }}
       />

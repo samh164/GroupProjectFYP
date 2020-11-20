@@ -57,7 +57,7 @@ const AuthStack = () => {
         options={({ navigation }) => ({
           title: "",
           headerStyle: {
-            backgroundColor: "#f9fafd",
+            backgroundColor: "#FDF5F4",
             shadowColor: "#f9fafd",
             elevation: 0,
           },
@@ -67,7 +67,7 @@ const AuthStack = () => {
               <AntDesign.Button
                 name="arrowleft"
                 size={25}
-                backgroundColor="#f9fafd"
+                backgroundColor="#FDF5F4"
                 color="#333"
                 onPress={() => navigation.navigate("Login")}
               />
